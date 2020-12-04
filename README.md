@@ -27,7 +27,7 @@ One suggestion is to simply display an error message telling the user to refresh
 
 ## 2. Sort & Group transactions by month
 
-Currently on the transactions page, displayed after clicking on an account, all the transactions are muddled up and difficult to read. Users have requested that they be placed into date order and grouped by month. Update the **UI** code to sort/group the transactions nd display them in a way similar to the screenshot below.
+Currently on the transactions page, displayed after clicking on an account, all the transactions are muddled up and difficult to read. Users have requested that they be placed into date order and grouped by month. Update the **UI** code to sort/group the transactions and display them in a way similar to the screenshot below.
 
 **Hint:** Transactions are received from the REST API as an array of objects, each one has a `dateTime` property. 
 
