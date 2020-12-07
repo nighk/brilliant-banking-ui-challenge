@@ -21,7 +21,7 @@ const AccountDetails = ({accountId}) => {
   const classes = useStyles();
   const transactions = useSelector(state => state.transactions);
 
-  if(Object.keys(transactions.list).length === 0 && !transactions.loading) {
+  if(!transactions.hasLoaded && !transactions.loading) {
     dispatch(getTransactions(accountId));
   }
 

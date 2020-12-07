@@ -7,25 +7,15 @@ This is the UI for the Brilliant Banking application. Follow the instructions be
 4. Run `npm start`
 5. Navigate to `http://localhost:3000` in your browser
 6. Login with the username of `user` and password of `ilovebanking`
-7. If you get a continous loading bar after loggong in just refesh the page, you will fix this issue as part challenge 1!
+7. If you get a continuous loading bar after logging in just refesh the page, you will fix this issue as part challenge 1!
 
 # Environment Variables
-The below is for information only. The variables are defauled in the `.env` and not need to be changed when running a standard local setup.
+The below is for information only. The variables are defaulted in the `.env` and not need to be changed when running a standard local setup.
 
 * REACT_APP_SERVER_HOSTNAME = The full URL for the backend server
 
 # Challenges
-## 1. Accounts not loading
-
-Several users of the banking app have reported that sometimes their list of accounts won't load, can you find the error and modify the **UI** code to cater for it?
-
-One suggestion is to simply display an error message telling the user to refresh the page like the screenshot below, although feel free to think of a better solution if you want to ;-)
-
-**Hint:** You may need to refesh the home page several times to re-create the bug
-
-![Error Message Screenshot](./screenshots/error-message.png)
-
-## 2. Sort & Group transactions by month
+## 1. Sort & Group transactions by month
 
 Currently on the transactions page, displayed after clicking on an account, all the transactions are muddled up and difficult to read. Users have requested that they be placed into date order and grouped by month. Update the **UI** code to sort/group the transactions and display them in a way similar to the screenshot below.
 
@@ -33,7 +23,7 @@ Currently on the transactions page, displayed after clicking on an account, all 
 
 ![Grouped by Date Screenshot](./screenshots/grouped-by-date.png)
 
-## 3. Display transaction details
+## 2. Display transaction details
 
 The users would like to see another screen where they can drill into the details of their transaction. Currently there is only one additional property called `reference` that isn't shown, however Brilliant Banking would like the option to easily add more information later, so try and create a screen that could also cater for additional information. One idea is to create a popup when a card is clicked like the screenshot below, but equally you could make a separate page as well.
 
@@ -46,6 +36,16 @@ The users would like to see another screen where they can drill into the details
 * reference
 
 ![Transaction Popup Screenshot](./screenshots/transaction-popup.png)
+
+## 3. Accounts not loading
+
+Several users of the banking app have reported that sometimes their list of accounts won't load on the Overview page, sometimes they just see a loading bar and that is it. Can you find the error and modify the **UI** code to cater for it?
+
+One suggestion is to simply display an error message telling the user to refresh the page like the screenshot below, although feel free to think of a better solution if you want to ;-)
+
+**Hint:** You may need to refresh the home page several times to re-create the bug
+
+![Error Message Screenshot](./screenshots/error-message.png)
 
 ## 4. Stretch Goal
 

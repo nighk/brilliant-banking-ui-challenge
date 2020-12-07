@@ -35,7 +35,7 @@ export const checkLogin = () => async dispatch => {
     if(e.response.status === 403) {
       navigate(consts.loginPath);
     } else {
-      console.error(e.message);
+      console.warn(e.message);
     }
   }
 }
@@ -49,7 +49,7 @@ export const login = ({ username, password }) => async dispatch => {
     if(e.response.status === 403) {
       dispatch(loginFailure(e.response.data));
     } else {
-      console.error(e.message);
+      console.warn(e.message);
     }
   }
 }
@@ -59,6 +59,6 @@ export const logout = () => async dispatch => {
     await api.get("/logout");
     dispatch(logoutSuccess());
   } catch (e) {
-    console.error(e.message);
+    console.warn(e.message);
   }
 }

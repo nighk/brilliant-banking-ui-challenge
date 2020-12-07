@@ -17,7 +17,7 @@ const Overview = () => {
     navigate(`${consts.accountDetailsPath}/${accountId}`);
   }
 
-  if(Object.keys(accounts.list).length === 0 && !accounts.loading) {
+  if(!accounts.hasLoaded && !accounts.loading) {
     dispatch(getAccounts());
   }
 

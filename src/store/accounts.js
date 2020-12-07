@@ -5,11 +5,13 @@ const slice = createSlice({
   name: "accounts",
   initialState: {
     list: {},
-    loading: false
+    loading: false,
+    hasLoaded: false
   },
   reducers: {
     populateList: (state, action) => {
       state.list = action.payload;
+      state.hasLoaded = true;
     },
     setLoading: (state, action) => {
       state.loading = action.payload;
@@ -28,6 +30,6 @@ export const getAccounts = () => async dispatch => {
     dispatch(populateList(res.data));
     dispatch(setLoading(false));
   } catch (e) {
-    return console.error(e.message);
+    console.warn(e.message);
   }
 }
