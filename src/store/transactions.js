@@ -4,7 +4,7 @@ import api from "../utils/api";
 const slice = createSlice({
   name: "transactions",
   initialState: {
-    list: [],
+    list: {},
     loading: false,
     hasLoaded: false
   },

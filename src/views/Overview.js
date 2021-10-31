@@ -29,7 +29,7 @@ const Overview = () => {
     return (
       <Box m={1}>
         <Container maxWidth="md">
-          {accounts.list.length === 0 ?
+          {Object.keys(accounts.list).length === 0 ?
             <Typography>No accounts to show</Typography>
           :
             Object.entries(accounts.list).map(([key, account]) => (
