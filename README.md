@@ -7,7 +7,7 @@ This is the UI for the Brilliant Banking application. Follow the instructions be
 4. Run `npm start`
 5. Navigate to `http://localhost:3000` in your browser
 6. Login with the username of `user` and password of `ilovebanking`
-7. If you get a continuous loading bar after logging in just refesh the page, you will fix this issue as part challenge 1!
+7. If you get a continuous loading bar after logging in just refesh the page, you will fix this issue as part challenge 3!
 
 # Environment Variables
 The below is for information only. The variables are defaulted in the `.env` and not need to be changed when running a standard local setup.
