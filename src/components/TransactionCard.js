@@ -52,7 +52,7 @@ const TransactionCard = ({ type, amount, accountBalance, dateTime, title }) => {
           </Grid>
           <Grid item xs={6}>
             <Typography className={classes.title} color="textSecondary">
-              <Moment format="D MMM YYYY @ HH:MM">{dateTime}</Moment>
+              <Moment format="D MMM YYYY @ HH:mm">{dateTime}</Moment>
             </Typography>
           </Grid>
           <Grid item xs={6}>
